@@ -19,3 +19,7 @@ def Add(request, id, name):
 
 def Page(request):
     return render(request, 'index.html')
+
+
+def Register(request):
+    return render(request, 'register.html')
