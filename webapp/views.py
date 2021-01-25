@@ -23,3 +23,15 @@ def Page(request):
 
 def Register(request):
     return render(request, 'register.html')
+
+
+def Content(request):
+    val1 = 'Anonymous Hacker'
+    val2 = 'Hacker Anonymous'
+    lists = ['val_1', 'val_2', 'val_3', 'val_4']
+    content = {
+        'key1': val1,
+        'key2': val2,
+        'lists': lists
+    }
+    return render(request, 'content.html', context=content)
